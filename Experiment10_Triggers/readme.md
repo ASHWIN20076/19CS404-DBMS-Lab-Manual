@@ -32,6 +32,11 @@ END;
 
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
+**Program**
+  ```
+
+  ```
+**Output**
 
 ---
 
@@ -42,6 +47,12 @@ END;
 
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
+  
+**Program**
+  ```
+
+  ```
+**Output**
 
 ---
 
@@ -53,6 +64,12 @@ END;
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 
+**Program**
+  ```
+
+  ```
+**Output**
+
 ---
 
 ## 4. Write a trigger to keep track of the number of updates made to a table.
@@ -63,6 +80,12 @@ END;
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 
+**Program**
+  ```
+
+  ```
+**Output**
+
 ---
 
 ## 5. Write a trigger that checks a condition before allowing insertion into a table.
@@ -72,6 +95,13 @@ END;
 
 **Expected Output:**
 - If the inserted salary in the `employees` table is below the condition (e.g., salary < 3000), the insert operation is blocked, and an error message is raised, such as: `ERROR: Salary below minimum threshold.`
+
+**Program**
+  ```
+
+  ```
+**Output**
+
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
