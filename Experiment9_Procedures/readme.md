@@ -224,21 +224,12 @@ Reversed number of 1234 is 4321
 ```
 ## Program:
 ```
-sql
-SET SERVEROUTPUT ON;
-
-CREATE OR REPLACE PROCEDURE print_table (num IN NUMBER) IS
+DECLARE
+    n NUMBER := 5;
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('Multiplication table of ' || num || ':');
     FOR i IN 1..10 LOOP
-        DBMS_OUTPUT.PUT_LINE(num || ' x ' || i || ' = ' || (num * i));
+        DBMS_OUTPUT.PUT_LINE(n || ' x ' || i || ' = ' || (n*i));
     END LOOP;
-END;
-/
-
--- Calling the procedure
-BEGIN
-    print_table(5);
 END;
 /
 ```
@@ -246,7 +237,8 @@ END;
 ## Output:*
 ```
 
-![image](https://github.com/user-attachments/assets/12625873-6b80-4936-8276-50f607cf3f82)
+<img width="710" height="449" alt="image" src="https://github.com/user-attachments/assets/f505878a-0366-49a3-8681-4d5bd023fc26" />
+
 
 
 * Expected Output:*  
