@@ -235,12 +235,12 @@ END;
 ```
 
 ## Output:*
-```
+
 
 <img width="710" height="449" alt="image" src="https://github.com/user-attachments/assets/f505878a-0366-49a3-8681-4d5bd023fc26" />
 
 
-
+```
 * Expected Output:*  
 Multiplication table of 5:  
 5 x 1 = 5  
